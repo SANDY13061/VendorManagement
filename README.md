@@ -11,6 +11,14 @@ Setup Instructions
    ```bash
    git clone https://github.com/SANDY13061/VendorManagement.git
 
+   
+2. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/SANDY13061/VendorManagement.git
+
+
+
 Navigate to the Project Directory:
 ------------------
 bash
