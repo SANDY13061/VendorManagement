@@ -103,13 +103,17 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
 - **Input Parameters:** JSON
   ```json
   {
-      "vendor": "Vendor ID",
-      "order_date": "Order Date",
-      "delivery_date": "Delivery Date",
-      "status": "Order Status",
-      "total_amount": "Total Amount",
-      "quality_rating": "Quality Rating"
-  }
+        "po_number": "Purchase Order ID",
+        "order_date": "Order Date With Time",
+        "delivery_date": "Delivery Date With Time",
+        "items": "List Of Items In JSON Formate",
+        "quantity": "Quantity in Number",
+        "status": "Status of the Work",
+        "quality_rating": "Quality Rating Of The Items",
+        "issue_date": "Issue Date With Time",
+        "acknowledgment_date": "Acknowledgment Date With Time",
+        "vendor": "Vendor Id "
+    }
 - **Example:**
   ```bash
   curl -X POST http://127.0.0.1:8000/api/purchase_orders/ -d '{"vendor": "1", "order_date": "2024-04-30", "delivery_date": "2024-05-05", "status": "pending", "total_amount": "1000.00", "quality_rating": "4"}' -H 'Content-Type: application/json'
