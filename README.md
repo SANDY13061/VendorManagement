@@ -116,20 +116,7 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
     }
 - **Example:**
   ```bash
-  curl -X POST http://127.0.0.1:8000/api/purchase_orders/ -d '{
-        "po_number": "10",
-        "order_date": "2024-04-01T15:21:12Z",
-        "delivery_date": "2024-04-27T15:21:16Z",
-        "items": {
-            "item1": "django"
-        },
-        "quantity": 5,
-        "status": "completed",
-        "quality_rating": 5.0,
-        "issue_date": "2024-04-03T15:22:27Z",
-        "acknowledgment_date": "2024-04-27T15:22:38Z",
-        "vendor": 1
-    }' -H 'Content-Type: application/json'
+  curl -X POST http://127.0.0.1:8000/api/purchase_orders/ -d '{"po_number": "10","order_date":"2024-04-01T15:21:12Z","delivery_date": "2024-04-27T15:21:16Z","items": {"item1": "django"}, "quantity": 5,"status": "completed","quality_rating": 5.0,"issue_date": "2024-04-03T15:22:27Z","acknowledgment_date": "2024-04-27T15:22:38Z","vendor": 1}' -H 'Content-Type: application/json'
 
 
 Authentication
