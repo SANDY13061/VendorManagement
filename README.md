@@ -21,17 +21,21 @@ Setup Instructions
     ```bash
     pip install -r requirements.txt
 
-4.**Apply Migrations:**
+4. **Apply Migrations:**
     ```bash
     python manage.py migrate
-Create a Superuser (Optional, for admin access):
-bash
-Copy code
-python manage.py createsuperuser
-Run the Development Server:
-bash
-Copy code
-python manage.py runserver
+
+5. **Create a Superuser (Optional, for admin access):**
+    ```bash
+    python manage.py createsuperuser
+
+6. **Run the Development Server:**
+    ```bash
+    python manage.py runserver
+
+
+
+
 Access the API:You can access the API at http://127.0.0.1:8000/api/.
 API Endpoints
 Vendor Profile Management
