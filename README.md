@@ -1,5 +1,3 @@
-                              # Vendor Management
-
 Vendor Management System
 ------------------------
 
