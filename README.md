@@ -6,7 +6,7 @@ This project is a Vendor Management System built using Django and Django REST Fr
 Setup Instructions
 ------------------
 
-1. **Clone the Repository:**
+**Clone the Repository:**
 
    ```bash
    git clone https://github.com/SANDY13061/VendorManagement.git
