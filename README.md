@@ -12,22 +12,18 @@ Setup Instructions
    git clone https://github.com/SANDY13061/VendorManagement.git
 
 
-2. **Navigate to the Project Directory**
+2. **Navigate to the Project Directory:**
 
    ```bash
-   cd vendor-management-system
+   cd vendarManagement
 
-bash
-Copy code
+3. **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
 
-Install Dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Apply Migrations:
-bash
-Copy code
-python manage.py migrate
+4.**Apply Migrations:**
+    ```bash
+    python manage.py migrate
 Create a Superuser (Optional, for admin access):
 bash
 Copy code
