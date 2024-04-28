@@ -33,7 +33,21 @@ Setup Instructions
     ```bash
     python manage.py runserver
 
+You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/).
 
+## API Endpoints
+
+### Create a new vendor:
+
+- **Endpoint:** POST /api/vendors/
+- **Input Parameters:** JSON
+  ```json
+  {
+      "name": "Vendor Name",
+      "contact_details": "Contact Information",
+      "address": "Vendor Address",
+      "vendor_code": "Unique Vendor Code"
+  }
 
 
 Access the API:You can access the API at http://127.0.0.1:8000/api/.
