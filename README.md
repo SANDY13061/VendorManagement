@@ -82,8 +82,12 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
   ```bash
   curl -X PUT http://127.0.0.1:8000/api/vendors/1/ -d '{"name": "Updated Vendor Name", "contact_details": "Updated Contact Information", "address": "Updated Vendor Address", "vendor_code": "Updated Unique Vendor Code"}' -H 'Content-Type: application/json'
 
+### Delete a vendor:
 
-
+- **Endpoint:** DELETE /api/vendors/{vendor_id}/
+- **Example:**
+  ```bash
+  curl -X DELETE http://127.0.0.1:8000/api/vendors/1/
 Purchase Order Tracking
 [...]
 
