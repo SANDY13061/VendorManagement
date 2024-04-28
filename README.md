@@ -37,6 +37,8 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
 
 ## API Endpoints
 
+## Vendor
+
 ### Create a new vendor:
 
 - **Endpoint:** POST /api/vendors/
@@ -89,9 +91,9 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
   ```bash
   curl -X DELETE http://127.0.0.1:8000/api/vendors/1/
 
-# Purchase Order Tracking API
+<!-- # Purchase Order Tracking API -->
 
-You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/).
+<!-- You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/). -->
 
 ## Purchase Order
 
