@@ -49,6 +49,16 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
       "vendor_code": "Unique Vendor Code"
   }
 
+You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/).
+
+## API Endpoints
+
+### List all vendors:
+
+- **Endpoint:** GET /api/vendors/
+- **Example:**
+  ```bash
+  curl http://127.0.0.1:8000/api/vendors/
 
 Access the API:You can access the API at http://127.0.0.1:8000/api/.
 API Endpoints
