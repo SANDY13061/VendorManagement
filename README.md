@@ -88,8 +88,30 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
 - **Example:**
   ```bash
   curl -X DELETE http://127.0.0.1:8000/api/vendors/1/
-Purchase Order Tracking
-[...]
+
+# Purchase Order Tracking API
+
+You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/).
+
+## Purchase Order
+
+### Create a new purchase order:
+
+- **Endpoint:** POST /api/purchase_orders/
+- **Input Parameters:** JSON
+  ```json
+  {
+      "vendor": "Vendor ID",
+      "order_date": "Order Date",
+      "delivery_date": "Delivery Date",
+      "status": "Order Status",
+      "total_amount": "Total Amount",
+      "quality_rating": "Quality Rating"
+  }
+- **Example:**
+  ```bash
+  curl -X POST http://127.0.0.1:8000/api/purchase_orders/ -d '{"vendor": "1", "order_date": "2024-04-30", "delivery_date": "2024-05-05", "status": "pending", "total_amount": "1000.00", "quality_rating": "4"}' -H 'Content-Type: application/json'
+
 
 Authentication
 The API endpoints are secured with token-based authentication. To access authenticated endpoints, include the token in the Authorization header:
