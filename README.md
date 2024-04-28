@@ -11,19 +11,15 @@ Setup Instructions
    ```bash
    git clone https://github.com/SANDY13061/VendorManagement.git
 
-   
-2. **Clone the Repository:**
+
+2. **Navigate to the Project Directory**
 
    ```bash
-   git clone https://github.com/SANDY13061/VendorManagement.git
+   cd vendor-management-system
 
-
-
-Navigate to the Project Directory:
-------------------
 bash
 Copy code
-cd vendor-management-system
+
 Install Dependencies:
 bash
 Copy code
