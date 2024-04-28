@@ -52,10 +52,6 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
   ```bash
   curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Vendor Name", "contact_details": "Contact Information", "address": "Vendor Address", "vendor_code": "Unique Vendor Code"}' -H 'Content-Type: application/json'
 
-You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/).
-
-## API Endpoints
-
 ### List all vendors:
 
 - **Endpoint:** GET /api/vendors/
