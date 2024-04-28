@@ -1,14 +1,22 @@
-# VendorManagement
+# Vendor Management
+
 Vendor Management System
+------------------------
+
 This project is a Vendor Management System built using Django and Django REST Framework. It allows you to manage vendor profiles, track purchase orders, and evaluate vendor performance metrics.
 
 Setup Instructions
-Follow these steps to set up the project locally:
+------------------
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/SANDY13061/VendorManagement.git
 
 Clone the Repository:
 bash
 Copy code
-git clone https://github.com/your-username/vendor-management-system.git
+git clone https://github.com/SANDY13061/VendorManagement.git
 Navigate to the Project Directory:
 bash
 Copy code
