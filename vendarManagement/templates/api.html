@@ -1,0 +1,15 @@
+<!-- templates/rest_framework/api.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Endpoints</title>
+</head>
+<body>
+    <h1>API Endpoints</h1>
+    <ul>
+        {% for endpoint in api_endpoints %}
+            <li>{{ endpoint.method }}: {{ endpoint.url }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
