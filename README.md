@@ -60,35 +60,30 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
   curl http://127.0.0.1:8000/api/vendors/
 
 
-Example:
-bash
-Copy code
-curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Vendor Name", "contact_details": "Contact Information", "address": "Vendor Address", "vendor_code": "Unique Vendor Code"}' -H 'Content-Type: application/json'
-List all vendors:
-Endpoint: GET /api/vendors/
-Example:
-bash
-Copy code
-curl http://127.0.0.1:8000/api/vendors/
-Retrieve details of a specific vendor:
-Endpoint: GET /api/vendors/{vendor_id}/
-Example:
-bash
-Copy code
-curl http://127.0.0.1:8000/api/vendors/1/
-Update a vendor's details:
-Endpoint: PUT /api/vendors/{vendor_id}/
-Input Parameters (same format as POST)
-Example:
-bash
-Copy code
-curl -X PUT http://127.0.0.1:8000/api/vendors/1/ -d '{"name": "Updated Vendor Name", "contact_details": "Updated Contact Information", "address": "Updated Vendor Address", "vendor_code": "Updated Unique Vendor Code"}' -H 'Content-Type: application/json'
-Delete a vendor:
-Endpoint: DELETE /api/vendors/{vendor_id}/
-Example:
-bash
-Copy code
-curl -X DELETE http://127.0.0.1:8000/api/vendors/1/
+### Retrieve details of a specific vendor:
+
+- **Endpoint:** GET /api/vendors/{vendor_id}/
+- **Example:**
+  ```bash
+  curl http://127.0.0.1:8000/api/vendors/1/
+
+### Update a vendor's details:
+
+- **Endpoint:** PUT /api/vendors/{vendor_id}/
+- **Input Parameters (same format as POST):**
+  ```json
+  {
+      "name": "Updated Vendor Name",
+      "contact_details": "Updated Contact Information",
+      "address": "Updated Vendor Address",
+      "vendor_code": "Updated Unique Vendor Code"
+  }
+- **Example:**
+  ```bash
+  curl -X PUT http://127.0.0.1:8000/api/vendors/1/ -d '{"name": "Updated Vendor Name", "contact_details": "Updated Contact Information", "address": "Updated Vendor Address", "vendor_code": "Updated Unique Vendor Code"}' -H 'Content-Type: application/json'
+
+
+
 Purchase Order Tracking
 [...]
 
