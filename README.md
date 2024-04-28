@@ -48,6 +48,9 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
       "address": "Vendor Address",
       "vendor_code": "Unique Vendor Code"
   }
+- **Example:**
+  ```bash
+  curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Vendor Name", "contact_details": "Contact Information", "address": "Vendor Address", "vendor_code": "Unique Vendor Code"}' -H 'Content-Type: application/json'
 
 You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/).
 
@@ -60,20 +63,7 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
   ```bash
   curl http://127.0.0.1:8000/api/vendors/
 
-Access the API:You can access the API at http://127.0.0.1:8000/api/.
-API Endpoints
-Vendor Profile Management
-Create a new vendor:
-Endpoint: POST /api/vendors/
-Input Parameters:
-json
-Copy code
-{
-    "name": "Vendor Name",
-    "contact_details": "Contact Information",
-    "address": "Vendor Address",
-    "vendor_code": "Unique Vendor Code"
-}
+
 Example:
 bash
 Copy code
