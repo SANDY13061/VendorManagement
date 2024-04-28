@@ -21,15 +21,18 @@ Setup Instructions
     ```bash
     pip install -r requirements.txt
 
-4. **Apply Migrations:**
+4. **Apply Migrate:**
     ```bash
     python manage.py migrate
 
-5. **Create a Superuser (Optional, for admin access):**
+5. **Apply Migrations:**
+    ```bash
+    python manage.py makemigrations
+
+6. **Create a Superuser (Optional, for admin access):**
     ```bash
     python manage.py createsuperuser
-
-6. **Run the Development Server:**
+7. **Run the Development Server:**
     ```bash
     python manage.py runserver
 
