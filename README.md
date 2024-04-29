@@ -55,7 +55,7 @@ The API endpoints are secured with token-based authentication. To access authent
   }
 - **Example:**
   ```bash
-  curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Name", "password": "Your Password"' -H 'Content-Type: application/json'
+  curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Your Name", "password": "Your Password"' -H 'Content-Type: application/json'
 
 ### Get Your Token:
 
@@ -68,7 +68,7 @@ The API endpoints are secured with token-based authentication. To access authent
   }
 - **Example:**
   ```bash
-  curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Name", "password": "Your Password"' -H 'Content-Type: application/json'
+  curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Your Name", "password": "Your Password"' -H 'Content-Type: application/json'
 
 
 
