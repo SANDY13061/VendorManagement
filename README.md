@@ -43,6 +43,9 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
 ## Authentication
 
 The API endpoints are secured with token-based authentication. To access authenticated endpoints, include the token in the Authorization header:
+    ```http
+    Authorization: Token YOUR_TOKEN_HERE
+
 
 ### Create a new Token:
 
@@ -198,8 +201,7 @@ The API endpoints are secured with token-based authentication. To access authent
 
 
 
-Authentication
-The API endpoints are secured with token-based authentication. To access authenticated endpoints, include the token in the Authorization header:
+
 
 makefile
 Copy code
