@@ -121,6 +121,50 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
   ```bash
   curl -X POST http://127.0.0.1:8000/api/purchase_orders/ -d '{"po_number": "10","order_date":"2024-04-01T15:21:12Z","delivery_date": "2024-04-27T15:21:16Z","items": {"item1": "django"}, "quantity": 5,"status": "completed","quality_rating": 5.0,"issue_date": "2024-04-03T15:22:27Z","acknowledgment_date": "2024-04-27T15:22:38Z","vendor": 1}' -H 'Content-Type: application/json'
 
+### List all Purchase Order:
+
+- **Endpoint:** GET /api/purchase_orders/
+- **Example:**
+  ```bash
+  curl http://127.0.0.1:8000/api/purchase_orders/
+
+
+### Retrieve details of a specific Purchase Order:
+
+- **Endpoint:** GET /api/purchase_orders/{purchase_orders_id}/
+- **Example:**
+  ```bash
+  curl http://127.0.0.1:8000/api/purchase_orders/1/
+
+### Update a purchase order's details:
+
+- **Endpoint:** PUT /api/purchase_orders/{purchase_orders_id}/
+- **Input Parameters (same format as POST):**
+  ```json
+  {
+        "po_number": "Purchase Order ID",
+        "order_date": "Order Date With Time",
+        "delivery_date": "Delivery Date With Time",
+        "items": "List Of Items In JSON Formate",
+        "quantity": "Quantity in Number",
+        "status": "Status of the Work",
+        "quality_rating": "Quality Rating Of The Items",
+        "issue_date": "Issue Date With Time",
+        "acknowledgment_date": "Acknowledgment Date With Time",
+        "vendor": "Vendor Id "
+    }
+- **Example:**
+  ```bash
+  curl -X POST http://127.0.0.1:8000/api/purchase_orders/ -d '{"po_number": "10","order_date":"2024-04-01T15:21:12Z","delivery_date": "2024-04-27T15:21:16Z","items": {"item1": "updatedjango"}, "quantity": 7,"status": "completed","quality_rating": 5.0,"issue_date": "2024-04-03T15:22:27Z","acknowledgment_date": "2024-04-27T15:22:38Z","vendor": 3}' -H 'Content-Type: application/json'
+
+### Delete a purchase order:
+
+- **Endpoint:** DELETE /api/purchase_orders/{purchase_orders_id}/
+- **Example:**
+  ```bash
+  curl -X DELETE http://127.0.0.1:8000/api/purchase_orders/1/
+
+
 
 Authentication
 The API endpoints are secured with token-based authentication. To access authenticated endpoints, include the token in the Authorization header:
