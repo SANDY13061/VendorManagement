@@ -40,6 +40,11 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
 
 ## API Endpoints
 
+## Authentication
+
+The API endpoints are secured with token-based authentication. To access authenticated endpoints, include the token in the Authorization header:
+
+
 ## Vendor
 
 ### Create a new vendor:
