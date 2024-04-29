@@ -43,9 +43,7 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
 ## Authentication
 
 The API endpoints are secured with token-based authentication. To access authenticated endpoints, include the token in the Authorization header:
--**Auth**
-    ```http
-    Authorization: Token YOUR_TOKEN_HERE
+![Project Logo](C:\VendorManagement\vendarManagement\AUTH.png)
 
 
 ### Create a new Token:
@@ -204,9 +202,7 @@ The API endpoints are secured with token-based authentication. To access authent
 
 
 
-makefile
-Copy code
-Authorization: Token YOUR_TOKEN_HERE
-Contributing
+## Contributing
+
 Contributions are welcome! Please feel free to open issues or submit pull requests.
  
