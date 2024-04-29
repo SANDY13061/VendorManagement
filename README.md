@@ -44,6 +44,33 @@ You can access the API at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api
 
 The API endpoints are secured with token-based authentication. To access authenticated endpoints, include the token in the Authorization header:
 
+### Create a new Token:
+
+- **Endpoint:** POST api/register-token/
+- **Input Parameters:** JSON
+  ```json
+  {
+      "name": "Your Name",
+      "password": "Your Password"
+  }
+- **Example:**
+  ```bash
+  curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Name", "password": "Your Password"' -H 'Content-Type: application/json'
+
+### Get Your Token:
+
+- **Endpoint:** POST api/get-auth-token/
+- **Input Parameters:** JSON
+  ```json
+  {
+      "name": "Your Name",
+      "password": "Your Password"
+  }
+- **Example:**
+  ```bash
+  curl -X POST http://127.0.0.1:8000/api/vendors/ -d '{"name": "Name", "password": "Your Password"' -H 'Content-Type: application/json'
+
+
 
 ## Vendor
 
